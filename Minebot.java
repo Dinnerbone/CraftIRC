@@ -331,6 +331,11 @@ public class Minebot extends PircBot {
 			this.changeNick(irc_handle);
 			this.sendMessage("AuthServ@Services.GameSurge.net", "AUTH " + irc_auth_username + " " + irc_auth_pass);
 		}
+		if (this.irc_auth_method.equalsIgnoreCase("quakenet")) {
+			log.info(CraftIRC.NAME + " - Using QuakeNet authentication.");
+			this.changeNick(irc_handle);
+			this.sendMessage("Q@CServe.quakenet.org", "AUTH " + irc_auth_username + " " + irc_auth_pass);
+		}
 
 	}
 

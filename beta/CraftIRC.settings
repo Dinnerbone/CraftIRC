@@ -23,8 +23,8 @@ irc-message-delay=1000
 
 ## BOT CREDENTIALS
 ## Mandatory: irc-handle
-## auth-method can be: nickserv OR gamesurge
-## auth-username is only needed for gamesurge, put your authserv account name here
+## auth-method can be: nickserv, gamesurge or quakenet
+## auth-username is only needed for gamesurge or quakenet, put your authserv account name here
 irc-handle=CraftIRC-bot
 irc-auth-method=
 irc-auth-username=
